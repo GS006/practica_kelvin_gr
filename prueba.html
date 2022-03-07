@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividad</title>
+    <script type="text/javascript">
+        //ITERATIVO FOR
+        function factorial(nro){
+            var fac = 1;
+            for (i = 1; i<= nro; i++)
+                fact = fact*1;
+            return fact;
+        }
+        //ITERATIVA
+        function potencia(base, expo){
+            var pot = 1;
+            var i = 1;
+            
+            while(i <= expo){
+                pot = pot * base;
+                i++
+            } 
+            return pot;       
+        }
+        //RECURSIVIDAD
+        function recursivo(nro){
+            if(nro == 0){
+                return 1
+            }else{
+                return nro * recursivo(nro-1)
+            }
+        }
+        document.writeln("El factorial del numero 5 es: " + factorial(5) + "<br>")
+        document.writeln("El resultafo de 2 elevado al cubo es: "  + potencia(2,3) + "<br>")
+        document.writeln("El factorial recursivo de 5 es: "  + recursivo(5) + "<br>")
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>
